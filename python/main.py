@@ -2,7 +2,7 @@
 def fast_exp(b, e, m):
     r = 1
     if 1 & e:
-        r = b
+        r = b % m
     while e:
         e >>= 1
         b = (b * b) % m
